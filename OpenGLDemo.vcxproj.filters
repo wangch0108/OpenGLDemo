@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Chapter1">
-      <UniqueIdentifier>{3D250781-29F2-618C-520B-50343E37971A}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Chapter1">
+      <UniqueIdentifier>{55E200D0-C1A2-7C06-8ADD-C583F65CC1E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Common">
+      <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{EFAC8DF2-5B8C-0C8E-64A4-9764D00273EF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGLDemo\Core\Chapter1\Chapter1.h">
-      <Filter>Chapter1</Filter>
+      <Filter>Core\Chapter1</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLDemo\Core\Common\Shader.h">
+      <Filter>Core\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGLDemo\Core\Chapter1\Chapter1.cpp">
-      <Filter>Chapter1</Filter>
+      <Filter>Core\Chapter1</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGLDemo\Core\main.cpp" />
+    <ClCompile Include="OpenGLDemo\Core\main.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenGLDemo\Shaders\3.3.shader.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="OpenGLDemo\Shaders\3.3.shader.vs">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

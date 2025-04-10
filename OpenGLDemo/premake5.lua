@@ -27,6 +27,7 @@ group "Dependencies"
 	include "OpenGLDemo/External/GLFW"
 group ""
 
+set_work_directory("OpenGLDemo")
 project "OpenGLDemo"
 	kind "ConsoleApp"
 	language "C++"
@@ -38,8 +39,12 @@ project "OpenGLDemo"
 
 	files
 	{
-		"OpenGLDemo/Core/**.h",
-		"OpenGLDemo/Core/**.cpp"
+		"Core/**.h",
+		"Core/**.cpp",
+
+		-- view shader source code in vs ide
+		"Shaders/*.shader.vs",
+		"Shaders/*.shader.fs",
 	}
 
 	defines
@@ -49,8 +54,9 @@ project "OpenGLDemo"
 
 	includedirs
 	{
-		"OpenGLDemo/External/Glad/include",
-		"OpenGLDemo/External/GLFW/include"
+		"External/Glad/include",
+		"External/GLFW/include",
+		"",
 	}
 
 	links
@@ -61,7 +67,7 @@ project "OpenGLDemo"
 
 	filter "configurations:Debug"
 		runtime "Debug"
-		symbols "on" -- 会默认生成/ZI
+		symbols "on"
 
 	filter "configurations:Release"
 		runtime "Release"
