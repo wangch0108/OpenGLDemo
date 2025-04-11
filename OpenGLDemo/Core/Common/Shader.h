@@ -1,7 +1,8 @@
 #pragma once
 
-#include <glad/glad.h>
+#include "Core/Common/Utility.h"
 
+#include <glad/glad.h>
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -15,6 +16,14 @@ public:
     // ------------------------------------------------------------------------
     Shader(const char* vertexPath, const char* fragmentPath)
     {
+        // 0. append Shaders/ directory
+        std::string vpath(vertexPath);
+        std::string fpath(fragmentPath);
+        if (!BeginsWith(vertexPath, "Shaders/"))
+            vpath.insert(0, "Shaders/");
+        if (!BeginsWith(fragmentPath, "Shaders/"))
+            fpath.insert(0, "Shaders/");
+
         // 1. retrieve the vertex/fragment source code from filePath
         std::string vertexCode;
         std::string fragmentCode;
@@ -26,8 +35,8 @@ public:
         try
         {
             // open files
-            vShaderFile.open(vertexPath);
-            fShaderFile.open(fragmentPath);
+            vShaderFile.open(vpath.c_str());
+            fShaderFile.open(fpath.c_str());
             std::stringstream vShaderStream, fShaderStream;
             // read file's buffer contents into streams
             vShaderStream << vShaderFile.rdbuf();
@@ -41,7 +50,8 @@ public:
         }
         catch (std::ifstream::failure& e)
         {
-            std::cout << "ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: " << e.what() << std::endl;
+            std::cout << "ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: " << e.what()
+        		<< "\n  filepath: " << vpath.c_str() << "," << fpath.c_str() << "\n";
         }
         const char* vShaderCode = vertexCode.c_str();
         const char* fShaderCode = fragmentCode.c_str();

@@ -10,8 +10,17 @@
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{089DB854-F469-1360-1D83-010809AF48EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\stb_image">
+      <UniqueIdentifier>{A237811D-8E1B-4273-F77B-3CC6E37E2CF5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{EFAC8DF2-5B8C-0C8E-64A4-9764D00273EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{A95C6780-9529-C28B-BE42-B033AA6EF719}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -21,13 +30,28 @@
     <ClInclude Include="Core\Common\Shader.h">
       <Filter>Core\Common</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Common\Utility.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\stb_image\stb_image.h">
+      <Filter>External\stb_image</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp">
+      <Filter>Core\Chapter1</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Chapter1\Chapter1.cpp">
       <Filter>Core\Chapter1</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Common\Utility.cpp">
+      <Filter>Core\Common</Filter>
+    </ClCompile>
     <ClCompile Include="Core\main.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="External\stb_image\stb_image.cpp">
+      <Filter>External\stb_image</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -37,5 +61,13 @@
     <None Include="Shaders\3.3.shader.vs">
       <Filter>Shaders</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\awesomeface.png">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\container.jpg">
+      <Filter>Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

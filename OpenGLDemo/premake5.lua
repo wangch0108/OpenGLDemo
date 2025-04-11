@@ -41,10 +41,14 @@ project "OpenGLDemo"
 	{
 		"Core/**.h",
 		"Core/**.cpp",
+		"External/stb_image/**.h",
+		"External/stb_image/**.cpp",
 
 		-- view shader source code in vs ide
 		"Shaders/*.shader.vs",
 		"Shaders/*.shader.fs",
+		"Textures/*.jpg",
+		"Textures/*.png",
 	}
 
 	defines
@@ -56,6 +60,7 @@ project "OpenGLDemo"
 	{
 		"External/Glad/include",
 		"External/GLFW/include",
+		"External/stb_image",
 		"",
 	}
 
