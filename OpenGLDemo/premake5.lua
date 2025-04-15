@@ -43,10 +43,11 @@ project "OpenGLDemo"
 		"Core/**.cpp",
 		"External/stb_image/**.h",
 		"External/stb_image/**.cpp",
+		"External/glm/glm/**.hpp",
 
 		-- view shader source code in vs ide
-		"Shaders/*.shader.vs",
-		"Shaders/*.shader.fs",
+		"Shaders/*.vs",
+		"Shaders/*.fs",
 		"Textures/*.jpg",
 		"Textures/*.png",
 	}
@@ -61,6 +62,7 @@ project "OpenGLDemo"
 		"External/Glad/include",
 		"External/GLFW/include",
 		"External/stb_image",
+		"External/glm",
 		"",
 	}
 
