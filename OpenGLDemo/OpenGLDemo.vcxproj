@@ -379,6 +379,7 @@
     <ClInclude Include="External\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.Transformations.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.cpp" />
@@ -393,6 +394,8 @@
     <None Include="Shaders\4.1.texture.vs" />
     <None Include="Shaders\5.1.transform.fs" />
     <None Include="Shaders\5.1.transform.vs" />
+    <None Include="Shaders\6.1.coordinate_systems.fs" />
+    <None Include="Shaders\6.1.coordinate_systems.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />

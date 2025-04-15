@@ -908,6 +908,7 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\3.3.shader.fs">
@@ -926,6 +927,12 @@
       <Filter>Shaders</Filter>
     </None>
     <None Include="Shaders\5.1.transform.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\6.1.coordinate_systems.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\6.1.coordinate_systems.fs">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
