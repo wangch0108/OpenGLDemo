@@ -96,6 +96,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Core\Chapter1\Chapter1.h" />
+    <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Shader.h" />
     <ClInclude Include="Core\Common\Utility.h" />
     <ClInclude Include="External\glm\glm\common.hpp" />
@@ -379,6 +380,7 @@
     <ClInclude Include="External\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Chapter1\Chapter1.Camera.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.Transformations.cpp" />
@@ -396,6 +398,8 @@
     <None Include="Shaders\5.1.transform.vs" />
     <None Include="Shaders\6.1.coordinate_systems.fs" />
     <None Include="Shaders\6.1.coordinate_systems.vs" />
+    <None Include="Shaders\7.1.camera.fs" />
+    <None Include="Shaders\7.1.camera.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />

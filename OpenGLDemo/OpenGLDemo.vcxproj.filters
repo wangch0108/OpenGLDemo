@@ -888,6 +888,7 @@
     <ClInclude Include="External\stb_image\stb_image.h">
       <Filter>External\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Common\Camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp">
@@ -909,6 +910,7 @@
       <Filter>External\stb_image</Filter>
     </ClCompile>
     <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp" />
+    <ClCompile Include="Core\Chapter1\Chapter1.Camera.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\3.3.shader.fs">
@@ -933,6 +935,12 @@
       <Filter>Shaders</Filter>
     </None>
     <None Include="Shaders\6.1.coordinate_systems.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\7.1.camera.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\7.1.camera.fs">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
