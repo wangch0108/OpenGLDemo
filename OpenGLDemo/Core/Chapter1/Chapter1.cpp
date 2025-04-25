@@ -53,7 +53,7 @@ int Chapter1Main()
 
     // build and compile our shader program
     // ------------------------------------
-    Shader ourShader("Shaders/3.3.shader.vs", "Shaders/3.3.shader.fs");
+    Shader ourShader("Shaders/Chapter1/3.3.shader.vs", "Shaders/Chapter1/3.3.shader.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

@@ -46,8 +46,8 @@ project "OpenGLDemo"
 		"External/glm/glm/**.hpp",
 
 		-- view shader source code in vs ide
-		"Shaders/*.vs",
-		"Shaders/*.fs",
+		"Shaders/**.vs",
+		"Shaders/**.fs",
 		"Textures/*.jpg",
 		"Textures/*.png",
 	}

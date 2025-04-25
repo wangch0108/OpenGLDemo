@@ -75,7 +75,7 @@ int Chapter1CameraMain()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("7.1.camera.vs", "7.1.camera.fs");
+    Shader ourShader("Chapter1/7.1.camera.vs", "Chapter1/7.1.camera.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------

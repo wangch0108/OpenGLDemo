@@ -7,6 +7,9 @@
     <Filter Include="Core\Chapter1">
       <UniqueIdentifier>{55E200D0-C1A2-7C06-8ADD-C583F65CC1E2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Chapter2">
+      <UniqueIdentifier>{56E200D0-C2A2-7C06-8BDD-C583F75CC1E2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
@@ -37,6 +40,12 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{EFAC8DF2-5B8C-0C8E-64A4-9764D00273EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Chapter1">
+      <UniqueIdentifier>{3644B968-223D-D8BA-4B6F-BD3F37C7B7C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Chapter2">
+      <UniqueIdentifier>{3744B968-233D-D8BA-4C6F-BD3F38C7B7C6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Textures">
       <UniqueIdentifier>{A95C6780-9529-C28B-BE42-B033AA6EF719}</UniqueIdentifier>
     </Filter>
@@ -44,6 +53,12 @@
   <ItemGroup>
     <ClInclude Include="Core\Chapter1\Chapter1.h">
       <Filter>Core\Chapter1</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Chapter2\Chapter2.h">
+      <Filter>Core\Chapter2</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Camera.h">
+      <Filter>Core\Common</Filter>
     </ClInclude>
     <ClInclude Include="Core\Common\Shader.h">
       <Filter>Core\Common</Filter>
@@ -888,9 +903,14 @@
     <ClInclude Include="External\stb_image\stb_image.h">
       <Filter>External\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Common\Camera.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Chapter1\Chapter1.Camera.cpp">
+      <Filter>Core\Chapter1</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp">
+      <Filter>Core\Chapter1</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp">
       <Filter>Core\Chapter1</Filter>
     </ClCompile>
@@ -899,6 +919,9 @@
     </ClCompile>
     <ClCompile Include="Core\Chapter1\Chapter1.cpp">
       <Filter>Core\Chapter1</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter2\Chapter2_1.Colors.cpp">
+      <Filter>Core\Chapter2</Filter>
     </ClCompile>
     <ClCompile Include="Core\Common\Utility.cpp">
       <Filter>Core\Common</Filter>
@@ -909,39 +932,62 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Chapter1\Chapter1.CoordinateSystems.cpp" />
-    <ClCompile Include="Core\Chapter1\Chapter1.Camera.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_2.BasicLighting.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\3.3.shader.fs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\3.3.shader.fs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\3.3.shader.vs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\3.3.shader.vs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\4.1.texture.fs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\4.1.texture.fs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\4.1.texture.vs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\4.1.texture.vs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\5.1.transform.fs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\5.1.transform.fs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\5.1.transform.vs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\5.1.transform.vs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\6.1.coordinate_systems.vs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\6.1.coordinate_systems.fs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\6.1.coordinate_systems.fs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\6.1.coordinate_systems.vs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\7.1.camera.vs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\7.1.camera.fs">
+      <Filter>Shaders\Chapter1</Filter>
     </None>
-    <None Include="Shaders\7.1.camera.fs">
-      <Filter>Shaders</Filter>
+    <None Include="Shaders\Chapter1\7.1.camera.vs">
+      <Filter>Shaders\Chapter1</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\1.colors.fs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\1.colors.vs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\1.light_cube.vs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\1.light_cube.fs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\2.1.basic_lighting.vs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\2.1.basic_lighting.fs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\2.1.light_cube.vs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\2.1.light_cube.fs">
+      <Filter>Shaders\Chapter2</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

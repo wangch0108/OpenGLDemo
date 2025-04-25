@@ -96,6 +96,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Core\Chapter1\Chapter1.h" />
+    <ClInclude Include="Core\Chapter2\Chapter2.h" />
     <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Shader.h" />
     <ClInclude Include="Core\Common\Utility.h" />
@@ -385,21 +386,31 @@
     <ClCompile Include="Core\Chapter1\Chapter1.Texture.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.Transformations.cpp" />
     <ClCompile Include="Core\Chapter1\Chapter1.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_1.Colors.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_2.BasicLighting.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\3.3.shader.fs" />
-    <None Include="Shaders\3.3.shader.vs" />
-    <None Include="Shaders\4.1.texture.fs" />
-    <None Include="Shaders\4.1.texture.vs" />
-    <None Include="Shaders\5.1.transform.fs" />
-    <None Include="Shaders\5.1.transform.vs" />
-    <None Include="Shaders\6.1.coordinate_systems.fs" />
-    <None Include="Shaders\6.1.coordinate_systems.vs" />
-    <None Include="Shaders\7.1.camera.fs" />
-    <None Include="Shaders\7.1.camera.vs" />
+    <None Include="Shaders\Chapter1\3.3.shader.fs" />
+    <None Include="Shaders\Chapter1\3.3.shader.vs" />
+    <None Include="Shaders\Chapter1\4.1.texture.fs" />
+    <None Include="Shaders\Chapter1\4.1.texture.vs" />
+    <None Include="Shaders\Chapter1\5.1.transform.fs" />
+    <None Include="Shaders\Chapter1\5.1.transform.vs" />
+    <None Include="Shaders\Chapter1\6.1.coordinate_systems.fs" />
+    <None Include="Shaders\Chapter1\6.1.coordinate_systems.vs" />
+    <None Include="Shaders\Chapter1\7.1.camera.fs" />
+    <None Include="Shaders\Chapter1\7.1.camera.vs" />
+    <None Include="Shaders\Chapter2\1.colors.fs" />
+    <None Include="Shaders\Chapter2\1.colors.vs" />
+    <None Include="Shaders\Chapter2\1.light_cube.fs" />
+    <None Include="Shaders\Chapter2\1.light_cube.vs" />
+    <None Include="Shaders\Chapter2\2.1.basic_lighting.fs" />
+    <None Include="Shaders\Chapter2\2.1.basic_lighting.vs" />
+    <None Include="Shaders\Chapter2\2.1.light_cube.fs" />
+    <None Include="Shaders\Chapter2\2.1.light_cube.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
