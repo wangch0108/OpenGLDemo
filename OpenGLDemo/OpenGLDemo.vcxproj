@@ -388,6 +388,12 @@
     <ClCompile Include="Core\Chapter1\Chapter1.cpp" />
     <ClCompile Include="Core\Chapter2\Chapter2_1.Colors.cpp" />
     <ClCompile Include="Core\Chapter2\Chapter2_2.BasicLighting.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_3.Materials.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_4.LightingMaps.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersDirectional.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersPoint.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersSpot.cpp" />
+    <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -411,10 +417,26 @@
     <None Include="Shaders\Chapter2\2.1.basic_lighting.vs" />
     <None Include="Shaders\Chapter2\2.1.light_cube.fs" />
     <None Include="Shaders\Chapter2\2.1.light_cube.vs" />
+    <None Include="Shaders\Chapter2\3.1.materials.fs" />
+    <None Include="Shaders\Chapter2\3.1.materials.vs" />
+    <None Include="Shaders\Chapter2\4.2.lighting_maps.fs" />
+    <None Include="Shaders\Chapter2\4.2.lighting_maps.vs" />
+    <None Include="Shaders\Chapter2\5.1.light_casters.fs" />
+    <None Include="Shaders\Chapter2\5.1.light_casters.vs" />
+    <None Include="Shaders\Chapter2\5.2.light_casters.fs" />
+    <None Include="Shaders\Chapter2\5.2.light_casters.vs" />
+    <None Include="Shaders\Chapter2\5.4.light_casters.fs" />
+    <None Include="Shaders\Chapter2\5.4.light_casters.vs" />
+    <None Include="Shaders\Chapter2\6.light_cube.fs" />
+    <None Include="Shaders\Chapter2\6.multiple_lights.fs" />
+    <None Include="Shaders\Chapter2\6.multiple_lights.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
     <Image Include="Textures\container.jpg" />
+    <Image Include="Textures\container2.png" />
+    <Image Include="Textures\container2_specular.png" />
+    <Image Include="Textures\matrix.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="External\GLFW\GLFW.vcxproj">
