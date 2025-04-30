@@ -21,6 +21,7 @@ workspace "OpenGLDemo"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+ASSIMP_BIN = "%{wks.location}/OpenGLDemo/External/Assimp/bin/x64/"
 
 group "Dependencies"
 	include "OpenGLDemo/External/Glad"
@@ -63,18 +64,30 @@ project "OpenGLDemo"
 		"External/GLFW/include",
 		"External/stb_image",
 		"External/glm",
+		"External/Assimp/include",
 		"",
+	}
+
+	libdirs 
+	{ 
+		"External/Assimp/lib/x64"
 	}
 
 	links
 	{
 		"GLFW",
 		"Glad",
+		"assimp-vc143-mt"
 	}
 
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
+
+		postbuildcommands
+		{
+			"{COPYDIR} \"%{ASSIMP_BIN}\" \"%{cfg.targetdir}\""
+		}
 
 	filter "configurations:Release"
 		runtime "Release"

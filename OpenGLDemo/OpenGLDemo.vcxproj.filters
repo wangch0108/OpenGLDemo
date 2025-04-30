@@ -10,6 +10,9 @@
     <Filter Include="Core\Chapter2">
       <UniqueIdentifier>{56E200D0-C2A2-7C06-8BDD-C583F75CC1E2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Chapter3">
+      <UniqueIdentifier>{57E200D0-C3A2-7C06-8CDD-C583F85CC1E2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
@@ -46,6 +49,9 @@
     <Filter Include="Shaders\Chapter2">
       <UniqueIdentifier>{3744B968-233D-D8BA-4C6F-BD3F38C7B7C6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Chapter3">
+      <UniqueIdentifier>{3844B968-243D-D8BA-4D6F-BD3F39C7B7C6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Textures">
       <UniqueIdentifier>{A95C6780-9529-C28B-BE42-B033AA6EF719}</UniqueIdentifier>
     </Filter>
@@ -57,7 +63,16 @@
     <ClInclude Include="Core\Chapter2\Chapter2.h">
       <Filter>Core\Chapter2</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Chapter3\Chapter3.h">
+      <Filter>Core\Chapter3</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Chapter3\Model.h">
+      <Filter>Core\Chapter3</Filter>
+    </ClInclude>
     <ClInclude Include="Core\Common\Camera.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Mesh.h">
       <Filter>Core\Common</Filter>
     </ClInclude>
     <ClInclude Include="Core\Common\Shader.h">
@@ -938,6 +953,15 @@
     <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersPoint.cpp">
       <Filter>Core\Chapter2</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersSpot.cpp">
+      <Filter>Core\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp">
+      <Filter>Core\Chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter3\Chapter3.cpp">
+      <Filter>Core\Chapter3</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Common\Utility.cpp">
       <Filter>Core\Common</Filter>
     </ClCompile>
@@ -947,8 +971,6 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersSpot.cpp" />
-    <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1029,20 +1051,26 @@
     <None Include="Shaders\Chapter2\5.2.light_casters.vs">
       <Filter>Shaders\Chapter2</Filter>
     </None>
-    <None Include="Shaders\Chapter2\5.4.light_casters.vs">
-      <Filter>Shaders\Chapter2</Filter>
-    </None>
     <None Include="Shaders\Chapter2\5.4.light_casters.fs">
       <Filter>Shaders\Chapter2</Filter>
     </None>
-    <None Include="Shaders\Chapter2\6.multiple_lights.vs">
+    <None Include="Shaders\Chapter2\5.4.light_casters.vs">
+      <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter2\6.light_cube.fs">
       <Filter>Shaders\Chapter2</Filter>
     </None>
     <None Include="Shaders\Chapter2\6.multiple_lights.fs">
       <Filter>Shaders\Chapter2</Filter>
     </None>
-    <None Include="Shaders\Chapter2\6.light_cube.fs">
+    <None Include="Shaders\Chapter2\6.multiple_lights.vs">
       <Filter>Shaders\Chapter2</Filter>
+    </None>
+    <None Include="Shaders\Chapter3\1.model_loading.fs">
+      <Filter>Shaders\Chapter3</Filter>
+    </None>
+    <None Include="Shaders\Chapter3\1.model_loading.vs">
+      <Filter>Shaders\Chapter3</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -58,7 +58,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -70,14 +70,19 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>External\Assimp\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Q /E /Y /I "$(SolutionDir)\OpenGLDemo\External\Assimp\bin\x64\" "..\bin\Debug-windows-x86_64\OpenGLDemo"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -92,12 +97,17 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>External\Assimp\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Core\Chapter1\Chapter1.h" />
     <ClInclude Include="Core\Chapter2\Chapter2.h" />
+    <ClInclude Include="Core\Chapter3\Chapter3.h" />
+    <ClInclude Include="Core\Chapter3\Model.h" />
     <ClInclude Include="Core\Common\Camera.h" />
+    <ClInclude Include="Core\Common\Mesh.h" />
     <ClInclude Include="Core\Common\Shader.h" />
     <ClInclude Include="Core\Common\Utility.h" />
     <ClInclude Include="External\glm\glm\common.hpp" />
@@ -394,6 +404,7 @@
     <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersPoint.cpp" />
     <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersSpot.cpp" />
     <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp" />
+    <ClCompile Include="Core\Chapter3\Chapter3.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -430,6 +441,8 @@
     <None Include="Shaders\Chapter2\6.light_cube.fs" />
     <None Include="Shaders\Chapter2\6.multiple_lights.fs" />
     <None Include="Shaders\Chapter2\6.multiple_lights.vs" />
+    <None Include="Shaders\Chapter3\1.model_loading.fs" />
+    <None Include="Shaders\Chapter3\1.model_loading.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
