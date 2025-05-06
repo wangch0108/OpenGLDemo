@@ -1,7 +1,7 @@
 #include "Core/Common/Shader.h"
 #include "Core/Common/Camera.h"
+#include "Core/Common/Model.h"
 #include "Chapter3.h"
-#include "Model.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>

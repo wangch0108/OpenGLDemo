@@ -1,6 +1,7 @@
 #include "Chapter1/Chapter1.h"
 #include "Chapter2/Chapter2.h"
 #include "Chapter3/Chapter3.h"
+#include "Chapter4/Chapter4.h"
 
 int main()
 {
@@ -19,5 +20,7 @@ int main()
 	// return Chapter2::Chapter2SpotLightMain();
 	// return Chapter2::Chapter2MultipleLightsMain();
 
-	return Chapter3::Chapter3ModelMain();
+	// return Chapter3::Chapter3ModelMain();
+
+	return Chapter4::Chapter4DepthTestingMain();
 }

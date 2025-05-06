@@ -105,9 +105,10 @@
     <ClInclude Include="Core\Chapter1\Chapter1.h" />
     <ClInclude Include="Core\Chapter2\Chapter2.h" />
     <ClInclude Include="Core\Chapter3\Chapter3.h" />
-    <ClInclude Include="Core\Chapter3\Model.h" />
+    <ClInclude Include="Core\Chapter4\Chapter4.h" />
     <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Mesh.h" />
+    <ClInclude Include="Core\Common\Model.h" />
     <ClInclude Include="Core\Common\Shader.h" />
     <ClInclude Include="Core\Common\Utility.h" />
     <ClInclude Include="External\glm\glm\common.hpp" />
@@ -405,6 +406,7 @@
     <ClCompile Include="Core\Chapter2\Chapter2_5.LightCastersSpot.cpp" />
     <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp" />
     <ClCompile Include="Core\Chapter3\Chapter3.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_1.DepthTesting.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -443,6 +445,8 @@
     <None Include="Shaders\Chapter2\6.multiple_lights.vs" />
     <None Include="Shaders\Chapter3\1.model_loading.fs" />
     <None Include="Shaders\Chapter3\1.model_loading.vs" />
+    <None Include="Shaders\Chapter4\1.1.depth_testing.fs" />
+    <None Include="Shaders\Chapter4\1.1.depth_testing.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
