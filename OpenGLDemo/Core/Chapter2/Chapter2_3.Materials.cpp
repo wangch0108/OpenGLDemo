@@ -13,10 +13,10 @@
 
 namespace Chapter2
 {
-	void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-	void mouse_callback(GLFWwindow* window, double xpos, double ypos);
-	void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
-	void processInput(GLFWwindow* window);
+	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+	static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+	static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+	static void processInput(GLFWwindow* window);
 
 	int Chapter2MaterialsMain()
 	{
@@ -228,7 +228,7 @@ namespace Chapter2
 
 	// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
 	// ---------------------------------------------------------------------------------------------------------
-	inline void processInput(GLFWwindow* window)
+	void processInput(GLFWwindow* window)
 	{
 		if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 			glfwSetWindowShouldClose(window, true);
@@ -245,7 +245,7 @@ namespace Chapter2
 
 	// glfw: whenever the window size changed (by OS or user resize) this callback function executes
 	// ---------------------------------------------------------------------------------------------
-	inline  void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+	 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	{
 		// make sure the viewport matches the new window dimensions; note that width and 
 		// height will be significantly larger than specified on retina displays.
@@ -255,7 +255,7 @@ namespace Chapter2
 
 	// glfw: whenever the mouse moves, this callback is called
 	// -------------------------------------------------------
-	inline void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
+	void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 	{
 		float xpos = static_cast<float>(xposIn);
 		float ypos = static_cast<float>(yposIn);
@@ -278,7 +278,7 @@ namespace Chapter2
 
 	// glfw: whenever the mouse scroll wheel scrolls, this callback is called
 	// ----------------------------------------------------------------------
-	inline void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+	void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 	{
 		camera.ProcessMouseScroll(static_cast<float>(yoffset));
 	}

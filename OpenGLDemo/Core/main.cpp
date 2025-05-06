@@ -22,5 +22,7 @@ int main()
 
 	// return Chapter3::Chapter3ModelMain();
 
-	return Chapter4::Chapter4DepthTestingMain();
+	// return Chapter4::Chapter4DepthTestingMain();
+	// return Chapter4::Chapter4StencilTestingMain();
+	return Chapter4::Chapter4BlendingMain();
 }

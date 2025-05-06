@@ -974,6 +974,12 @@
     <ClCompile Include="Core\Chapter4\Chapter4_1.DepthTesting.cpp">
       <Filter>Core\Chapter4</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_2.StencilTesting.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_3.Blending.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Common\Utility.cpp">
       <Filter>Core\Common</Filter>
     </ClCompile>
@@ -1084,10 +1090,25 @@
     <None Include="Shaders\Chapter3\1.model_loading.vs">
       <Filter>Shaders\Chapter3</Filter>
     </None>
+    <None Include="Shaders\Chapter4\1.1.depth_testing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
     <None Include="Shaders\Chapter4\1.1.depth_testing.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\1.1.depth_testing.fs">
+    <None Include="Shaders\Chapter4\2.stencil_single_color.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\2.stencil_testing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\2.stencil_testing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\3.1.blending.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\3.1.blending.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
   </ItemGroup>
@@ -1104,7 +1125,16 @@
     <Image Include="Textures\container2_specular.png">
       <Filter>Textures</Filter>
     </Image>
+    <Image Include="Textures\grass.png">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\marble.jpg">
+      <Filter>Textures</Filter>
+    </Image>
     <Image Include="Textures\matrix.jpg">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\metal.png">
       <Filter>Textures</Filter>
     </Image>
   </ItemGroup>

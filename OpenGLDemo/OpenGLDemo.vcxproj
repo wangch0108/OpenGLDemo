@@ -407,6 +407,8 @@
     <ClCompile Include="Core\Chapter2\Chapter2_6.MultipleLights.cpp" />
     <ClCompile Include="Core\Chapter3\Chapter3.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_1.DepthTesting.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_2.StencilTesting.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_3.Blending.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -447,13 +449,21 @@
     <None Include="Shaders\Chapter3\1.model_loading.vs" />
     <None Include="Shaders\Chapter4\1.1.depth_testing.fs" />
     <None Include="Shaders\Chapter4\1.1.depth_testing.vs" />
+    <None Include="Shaders\Chapter4\2.stencil_single_color.fs" />
+    <None Include="Shaders\Chapter4\2.stencil_testing.fs" />
+    <None Include="Shaders\Chapter4\2.stencil_testing.vs" />
+    <None Include="Shaders\Chapter4\3.1.blending.fs" />
+    <None Include="Shaders\Chapter4\3.1.blending.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
     <Image Include="Textures\container.jpg" />
     <Image Include="Textures\container2.png" />
     <Image Include="Textures\container2_specular.png" />
+    <Image Include="Textures\grass.png" />
+    <Image Include="Textures\marble.jpg" />
     <Image Include="Textures\matrix.jpg" />
+    <Image Include="Textures\metal.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="External\GLFW\GLFW.vcxproj">
