@@ -121,4 +121,5 @@ namespace Chapter4
 	int Chapter4BlendingMain();
 	int Chapter4FrameBuffersMain();
 	int Chapter4CubemapsMain();
+	int Chapter4UBOMain();
 }

@@ -411,6 +411,7 @@
     <ClCompile Include="Core\Chapter4\Chapter4_3.Blending.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_4.FrameBuffers.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_5.Cubemaps.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_6.UBO.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -464,6 +465,11 @@
     <None Include="Shaders\Chapter4\6.1.cubemaps.vs" />
     <None Include="Shaders\Chapter4\6.1.skybox.fs" />
     <None Include="Shaders\Chapter4\6.1.skybox.vs" />
+    <None Include="Shaders\Chapter4\8.advanced_glsl.vs" />
+    <None Include="Shaders\Chapter4\8.blue.fs" />
+    <None Include="Shaders\Chapter4\8.green.fs" />
+    <None Include="Shaders\Chapter4\8.red.fs" />
+    <None Include="Shaders\Chapter4\8.yellow.fs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
