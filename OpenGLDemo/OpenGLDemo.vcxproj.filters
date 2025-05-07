@@ -989,6 +989,8 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_4.FrameBuffers.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_5.Cubemaps.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1111,6 +1113,30 @@
     <None Include="Shaders\Chapter4\3.1.blending.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
+    <None Include="Shaders\Chapter4\5.1.framebuffers.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\5.1.framebuffers.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\5.1.framebuffers_screen.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\5.1.framebuffers_screen.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\6.1.cubemaps.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\6.1.cubemaps.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\6.1.skybox.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\6.1.skybox.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png">
@@ -1135,6 +1161,9 @@
       <Filter>Textures</Filter>
     </Image>
     <Image Include="Textures\metal.png">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\window.png">
       <Filter>Textures</Filter>
     </Image>
   </ItemGroup>

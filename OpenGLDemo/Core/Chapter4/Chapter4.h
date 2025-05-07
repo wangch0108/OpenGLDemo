@@ -119,4 +119,6 @@ namespace Chapter4
 	int Chapter4DepthTestingMain();
 	int Chapter4StencilTestingMain();
 	int Chapter4BlendingMain();
+	int Chapter4FrameBuffersMain();
+	int Chapter4CubemapsMain();
 }

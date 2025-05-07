@@ -409,6 +409,8 @@
     <ClCompile Include="Core\Chapter4\Chapter4_1.DepthTesting.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_2.StencilTesting.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_3.Blending.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_4.FrameBuffers.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_5.Cubemaps.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -454,6 +456,14 @@
     <None Include="Shaders\Chapter4\2.stencil_testing.vs" />
     <None Include="Shaders\Chapter4\3.1.blending.fs" />
     <None Include="Shaders\Chapter4\3.1.blending.vs" />
+    <None Include="Shaders\Chapter4\5.1.framebuffers.fs" />
+    <None Include="Shaders\Chapter4\5.1.framebuffers.vs" />
+    <None Include="Shaders\Chapter4\5.1.framebuffers_screen.fs" />
+    <None Include="Shaders\Chapter4\5.1.framebuffers_screen.vs" />
+    <None Include="Shaders\Chapter4\6.1.cubemaps.fs" />
+    <None Include="Shaders\Chapter4\6.1.cubemaps.vs" />
+    <None Include="Shaders\Chapter4\6.1.skybox.fs" />
+    <None Include="Shaders\Chapter4\6.1.skybox.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
@@ -464,6 +474,7 @@
     <Image Include="Textures\marble.jpg" />
     <Image Include="Textures\matrix.jpg" />
     <Image Include="Textures\metal.png" />
+    <Image Include="Textures\window.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="External\GLFW\GLFW.vcxproj">
