@@ -412,6 +412,9 @@
     <ClCompile Include="Core\Chapter4\Chapter4_4.FrameBuffers.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_5.Cubemaps.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_6.UBO.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -452,6 +455,16 @@
     <None Include="Shaders\Chapter3\1.model_loading.vs" />
     <None Include="Shaders\Chapter4\1.1.depth_testing.fs" />
     <None Include="Shaders\Chapter4\1.1.depth_testing.vs" />
+    <None Include="Shaders\Chapter4\10.1.instancing.fs" />
+    <None Include="Shaders\Chapter4\10.1.instancing.vs" />
+    <None Include="Shaders\Chapter4\10.2.instancing.fs" />
+    <None Include="Shaders\Chapter4\10.2.instancing.vs" />
+    <None Include="Shaders\Chapter4\10.3.instancing.fs" />
+    <None Include="Shaders\Chapter4\10.3.instancing.vs" />
+    <None Include="Shaders\Chapter4\11.2.aa_post.fs" />
+    <None Include="Shaders\Chapter4\11.2.aa_post.vs" />
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.fs" />
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.vs" />
     <None Include="Shaders\Chapter4\2.stencil_single_color.fs" />
     <None Include="Shaders\Chapter4\2.stencil_testing.fs" />
     <None Include="Shaders\Chapter4\2.stencil_testing.vs" />

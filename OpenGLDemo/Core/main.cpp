@@ -27,5 +27,8 @@ int main()
 	// return Chapter4::Chapter4BlendingMain();
 	// return Chapter4::Chapter4FrameBuffersMain();
 	// return Chapter4::Chapter4CubemapsMain();
-	return Chapter4::Chapter4UBOMain();
+	//return Chapter4::Chapter4UBOMain();
+	//return Chapter4::Chapter4InstancingMain();
+	//return Chapter4::Chapter4Instancing2Main();
+	return Chapter4::Chapter4MSAAMain();
 }

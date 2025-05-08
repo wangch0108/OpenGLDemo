@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 #include <glm/vec3.hpp>
 #include <iostream>
+#include <sstream>
 
 namespace Chapter4
 {
@@ -116,10 +117,30 @@ namespace Chapter4
 		return textureID;
 	}
 
+	inline void updateTitleWithFPS(GLFWwindow* window) {
+		static double lastTime = glfwGetTime();
+		static int frameCount = 0;
+
+		double currentTime = glfwGetTime();
+		frameCount++;
+
+		if (currentTime - lastTime >= 1.0) {
+			std::stringstream ss;
+			ss << "LearnOpenGL - FPS: " << frameCount;
+			glfwSetWindowTitle(window, ss.str().c_str());
+
+			frameCount = 0;
+			lastTime = currentTime;
+		}
+	}
+
 	int Chapter4DepthTestingMain();
 	int Chapter4StencilTestingMain();
 	int Chapter4BlendingMain();
 	int Chapter4FrameBuffersMain();
 	int Chapter4CubemapsMain();
 	int Chapter4UBOMain();
+	int Chapter4InstancingMain();
+	int Chapter4Instancing2Main();
+	int Chapter4MSAAMain();
 }

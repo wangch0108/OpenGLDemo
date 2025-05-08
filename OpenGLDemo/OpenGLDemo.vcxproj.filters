@@ -998,6 +998,9 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1157,6 +1160,36 @@
       <Filter>Shaders\Chapter4</Filter>
     </None>
     <None Include="Shaders\Chapter4\8.yellow.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.1.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.1.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.2.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.2.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.3.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.3.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.aa_post.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.aa_post.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
   </ItemGroup>
