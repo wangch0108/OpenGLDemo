@@ -19,6 +19,7 @@ namespace Chapter5
 	inline float deltaTime = 0.0f;
 	inline float lastFrame = 0.0f;
 
-	int Chapter5BulinnPhoneMain();
+	int Chapter5BulinnPhongMain();
 	int Chapter5ShadowMappingMain();
+	int Chapter5NormalMappingMain();
 }

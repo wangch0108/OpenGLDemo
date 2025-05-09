@@ -38,5 +38,6 @@ int main()
 
 	Shader::pathPrefix = "Shaders/Chapter5/";
 	// return Chapter5::Chapter5BulinnPhongMain();
-	return Chapter5::Chapter5ShadowMappingMain();
+	// return Chapter5::Chapter5ShadowMappingMain();
+	return Chapter5::Chapter5NormalMappingMain(); // TODO 这个目前还有问题
 }
