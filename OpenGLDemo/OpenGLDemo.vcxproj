@@ -106,6 +106,7 @@
     <ClInclude Include="Core\Chapter2\Chapter2.h" />
     <ClInclude Include="Core\Chapter3\Chapter3.h" />
     <ClInclude Include="Core\Chapter4\Chapter4.h" />
+    <ClInclude Include="Core\Chapter5\Chapter5.h" />
     <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Mesh.h" />
     <ClInclude Include="Core\Common\Model.h" />
@@ -418,6 +419,9 @@
     <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_1.BlinnPhong.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp" />
+    <ClCompile Include="Core\Common\Shader.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
     <ClCompile Include="External\stb_image\stb_image.cpp" />
@@ -497,6 +501,14 @@
     <None Include="Shaders\Chapter4\9.3.normal_visualization.fs" />
     <None Include="Shaders\Chapter4\9.3.normal_visualization.gs" />
     <None Include="Shaders\Chapter4\9.3.normal_visualization.vs" />
+    <None Include="Shaders\Chapter5\1.advanced_lighting.fs" />
+    <None Include="Shaders\Chapter5\1.advanced_lighting.vs" />
+    <None Include="Shaders\Chapter5\3.1.2.debug_quad.fs" />
+    <None Include="Shaders\Chapter5\3.1.2.debug_quad.vs" />
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.fs" />
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.vs" />
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.fs" />
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />

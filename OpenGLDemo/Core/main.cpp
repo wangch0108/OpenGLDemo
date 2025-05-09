@@ -2,6 +2,7 @@
 #include "Chapter2/Chapter2.h"
 #include "Chapter3/Chapter3.h"
 #include "Chapter4/Chapter4.h"
+#include "Chapter5/Chapter5.h"
 
 int main()
 {
@@ -30,8 +31,12 @@ int main()
 	// return Chapter4::Chapter4UBOMain();
 	// return Chapter4::Chapter4GeometryShaderMain();
 	// return Chapter4::Chapter4GeometryShader2Main();
-	return Chapter4::Chapter4GeometryShader3Main();
+	// return Chapter4::Chapter4GeometryShader3Main();
 	// return Chapter4::Chapter4InstancingMain();
 	// return Chapter4::Chapter4Instancing2Main();
 	// return Chapter4::Chapter4MSAAMain();
+
+	Shader::pathPrefix = "Shaders/Chapter5/";
+	// return Chapter5::Chapter5BulinnPhongMain();
+	return Chapter5::Chapter5ShadowMappingMain();
 }

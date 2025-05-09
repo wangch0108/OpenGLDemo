@@ -16,6 +16,9 @@
     <Filter Include="Core\Chapter4">
       <UniqueIdentifier>{58E200D0-C4A2-7C06-8DDD-C583F95CC1E2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Chapter5">
+      <UniqueIdentifier>{59E200D0-C5A2-7C06-8EDD-C583FA5CC1E2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
@@ -58,6 +61,9 @@
     <Filter Include="Shaders\Chapter4">
       <UniqueIdentifier>{3944B968-253D-D8BA-4E6F-BD3F3AC7B7C6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Chapter5">
+      <UniqueIdentifier>{3A44B968-263D-D8BA-4F6F-BD3F3BC7B7C6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Textures">
       <UniqueIdentifier>{A95C6780-9529-C28B-BE42-B033AA6EF719}</UniqueIdentifier>
     </Filter>
@@ -74,6 +80,9 @@
     </ClInclude>
     <ClInclude Include="Core\Chapter4\Chapter4.h">
       <Filter>Core\Chapter4</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Chapter5\Chapter5.h">
+      <Filter>Core\Chapter5</Filter>
     </ClInclude>
     <ClInclude Include="Core\Common\Camera.h">
       <Filter>Core\Common</Filter>
@@ -992,6 +1001,12 @@
     <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader.cpp">
       <Filter>Core\Chapter4</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader2.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader3.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp">
       <Filter>Core\Chapter4</Filter>
     </ClCompile>
@@ -1000,6 +1015,12 @@
     </ClCompile>
     <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp">
       <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_1.BlinnPhong.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Common\Shader.cpp">
+      <Filter>Core\Common</Filter>
     </ClCompile>
     <ClCompile Include="Core\Common\Utility.cpp">
       <Filter>Core\Common</Filter>
@@ -1010,8 +1031,7 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader2.cpp" />
-    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader3.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1212,22 +1232,19 @@
     <None Include="Shaders\Chapter4\9.1.geometry_shader.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\9.2.geometry_shader.vs">
-      <Filter>Shaders\Chapter4</Filter>
-    </None>
     <None Include="Shaders\Chapter4\9.2.geometry_shader.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
     <None Include="Shaders\Chapter4\9.2.geometry_shader.gs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\9.3.default.vs">
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
     <None Include="Shaders\Chapter4\9.3.default.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\9.3.normal_visualization.vs">
+    <None Include="Shaders\Chapter4\9.3.default.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
     <None Include="Shaders\Chapter4\9.3.normal_visualization.fs">
@@ -1235,6 +1252,33 @@
     </None>
     <None Include="Shaders\Chapter4\9.3.normal_visualization.gs">
       <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\1.advanced_lighting.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\1.advanced_lighting.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.debug_quad.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.debug_quad.fs">
+      <Filter>Shaders\Chapter5</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
