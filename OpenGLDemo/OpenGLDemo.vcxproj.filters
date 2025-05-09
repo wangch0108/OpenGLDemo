@@ -989,6 +989,18 @@
     <ClCompile Include="Core\Chapter4\Chapter4_6.UBO.cpp">
       <Filter>Core\Chapter4</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp">
+      <Filter>Core\Chapter4</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Common\Utility.cpp">
       <Filter>Core\Common</Filter>
     </ClCompile>
@@ -998,9 +1010,8 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp" />
-    <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp" />
-    <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader2.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1108,6 +1119,36 @@
     <None Include="Shaders\Chapter4\1.1.depth_testing.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
+    <None Include="Shaders\Chapter4\10.1.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.1.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.2.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.2.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.3.instancing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\10.3.instancing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.aa_post.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.aa_post.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\11.2.anti_aliasing.vs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
     <None Include="Shaders\Chapter4\2.stencil_single_color.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
@@ -1162,34 +1203,37 @@
     <None Include="Shaders\Chapter4\8.yellow.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.1.instancing.vs">
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.1.instancing.fs">
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.gs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.2.instancing.vs">
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.2.instancing.fs">
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.3.instancing.vs">
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\10.3.instancing.fs">
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.gs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\11.2.anti_aliasing.vs">
+    <None Include="Shaders\Chapter4\9.3.default.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\11.2.anti_aliasing.fs">
+    <None Include="Shaders\Chapter4\9.3.default.fs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\11.2.aa_post.vs">
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter4\11.2.aa_post.fs">
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.fs">
+      <Filter>Shaders\Chapter4</Filter>
+    </None>
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.gs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
   </ItemGroup>

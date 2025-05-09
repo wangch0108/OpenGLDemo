@@ -140,6 +140,9 @@ namespace Chapter4
 	int Chapter4FrameBuffersMain();
 	int Chapter4CubemapsMain();
 	int Chapter4UBOMain();
+	int Chapter4GeometryShaderMain();
+	int Chapter4GeometryShader2Main();
+	int Chapter4GeometryShader3Main();
 	int Chapter4InstancingMain();
 	int Chapter4Instancing2Main();
 	int Chapter4MSAAMain();

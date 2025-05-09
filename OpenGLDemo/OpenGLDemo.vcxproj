@@ -412,6 +412,9 @@
     <ClCompile Include="Core\Chapter4\Chapter4_4.FrameBuffers.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_5.Cubemaps.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_6.UBO.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader2.cpp" />
+    <ClCompile Include="Core\Chapter4\Chapter4_7.GeometryShader3.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_8.Instancing2.cpp" />
     <ClCompile Include="Core\Chapter4\Chapter4_9.MSAA.cpp" />
@@ -483,6 +486,17 @@
     <None Include="Shaders\Chapter4\8.green.fs" />
     <None Include="Shaders\Chapter4\8.red.fs" />
     <None Include="Shaders\Chapter4\8.yellow.fs" />
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.fs" />
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.gs" />
+    <None Include="Shaders\Chapter4\9.1.geometry_shader.vs" />
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.fs" />
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.gs" />
+    <None Include="Shaders\Chapter4\9.2.geometry_shader.vs" />
+    <None Include="Shaders\Chapter4\9.3.default.fs" />
+    <None Include="Shaders\Chapter4\9.3.default.vs" />
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.fs" />
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.gs" />
+    <None Include="Shaders\Chapter4\9.3.normal_visualization.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />

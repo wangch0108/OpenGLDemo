@@ -49,6 +49,7 @@ project "OpenGLDemo"
 		-- view shader source code in vs ide
 		"Shaders/**.vs",
 		"Shaders/**.fs",
+		"Shaders/**.gs",
 		"Textures/*.jpg",
 		"Textures/*.png",
 	}
