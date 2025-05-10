@@ -1033,6 +1033,8 @@
     </ClCompile>
     <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_3.NormalMapping.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1285,6 +1287,39 @@
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\4.normal_mapping.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\6.hdr.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\6.hdr.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\6.lighting.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\6.lighting.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.bloom.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.bloom.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.bloom_final.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.bloom_final.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.blur.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.blur.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\7.light_box.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
   </ItemGroup>

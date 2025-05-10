@@ -22,4 +22,6 @@ namespace Chapter5
 	int Chapter5BulinnPhongMain();
 	int Chapter5ShadowMappingMain();
 	int Chapter5NormalMappingMain();
+	int Chapter5HDRMain();
+	int Chapter5BloomMain();
 }

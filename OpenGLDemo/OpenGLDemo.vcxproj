@@ -422,6 +422,8 @@
     <ClCompile Include="Core\Chapter5\Chapter5_1.BlinnPhong.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_3.NormalMapping.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
     <ClCompile Include="Core\Common\Shader.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
@@ -512,6 +514,17 @@
     <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.vs" />
     <None Include="Shaders\Chapter5\4.normal_mapping.fs" />
     <None Include="Shaders\Chapter5\4.normal_mapping.vs" />
+    <None Include="Shaders\Chapter5\6.hdr.fs" />
+    <None Include="Shaders\Chapter5\6.hdr.vs" />
+    <None Include="Shaders\Chapter5\6.lighting.fs" />
+    <None Include="Shaders\Chapter5\6.lighting.vs" />
+    <None Include="Shaders\Chapter5\7.bloom.fs" />
+    <None Include="Shaders\Chapter5\7.bloom.vs" />
+    <None Include="Shaders\Chapter5\7.bloom_final.fs" />
+    <None Include="Shaders\Chapter5\7.bloom_final.vs" />
+    <None Include="Shaders\Chapter5\7.blur.fs" />
+    <None Include="Shaders\Chapter5\7.blur.vs" />
+    <None Include="Shaders\Chapter5\7.light_box.fs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
