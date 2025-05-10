@@ -24,4 +24,5 @@ namespace Chapter5
 	int Chapter5NormalMappingMain();
 	int Chapter5HDRMain();
 	int Chapter5BloomMain();
+	int Chapter5DeferredShadingMain();
 }

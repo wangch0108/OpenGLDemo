@@ -41,5 +41,6 @@ int main()
 	// return Chapter5::Chapter5ShadowMappingMain();
 	// return Chapter5::Chapter5NormalMappingMain();
 	// return Chapter5::Chapter5HDRMain();
-	return Chapter5::Chapter5BloomMain();
+	// return Chapter5::Chapter5BloomMain();
+	return Chapter5::Chapter5DeferredShadingMain();
 }

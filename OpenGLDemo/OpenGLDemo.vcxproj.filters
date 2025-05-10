@@ -1035,6 +1035,7 @@
     <ClCompile Include="Core\Chapter5\Chapter5_3.NormalMapping.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
+    <ClCompile Include="Core\Chapter5\Chapter5_6.DeferredShading.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1320,6 +1321,24 @@
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\7.light_box.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.g_buffer.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.g_buffer.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_shading.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_shading.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_light_box.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_light_box.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
   </ItemGroup>
