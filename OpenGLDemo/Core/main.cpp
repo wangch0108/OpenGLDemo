@@ -3,6 +3,7 @@
 #include "Chapter3/Chapter3.h"
 #include "Chapter4/Chapter4.h"
 #include "Chapter5/Chapter5.h"
+#include "Chapter7/Chapter7.h"
 
 int main()
 {
@@ -42,5 +43,8 @@ int main()
 	// return Chapter5::Chapter5NormalMappingMain();
 	// return Chapter5::Chapter5HDRMain();
 	// return Chapter5::Chapter5BloomMain();
-	return Chapter5::Chapter5DeferredShadingMain();
+	// return Chapter5::Chapter5DeferredShadingMain();
+
+	Shader::pathPrefix = "Shaders/Chapter7/";
+	return Chapter7::Chapter7TextRenderingMain();
 }

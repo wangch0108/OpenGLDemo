@@ -58,7 +58,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;External\freetype2\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -82,7 +82,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>External\Glad\include;External\GLFW\include;External\stb_image;External\glm;External\Assimp\include;External\freetype2\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -107,6 +107,7 @@
     <ClInclude Include="Core\Chapter3\Chapter3.h" />
     <ClInclude Include="Core\Chapter4\Chapter4.h" />
     <ClInclude Include="Core\Chapter5\Chapter5.h" />
+    <ClInclude Include="Core\Chapter7\Chapter7.h" />
     <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Mesh.h" />
     <ClInclude Include="Core\Common\Model.h" />
@@ -425,6 +426,7 @@
     <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_6.DeferredShading.cpp" />
+    <ClCompile Include="Core\Chapter7\Chapter7_1.TextRendering.cpp" />
     <ClCompile Include="Core\Common\Shader.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
@@ -532,9 +534,13 @@
     <None Include="Shaders\Chapter5\8.1.deferred_shading.vs" />
     <None Include="Shaders\Chapter5\8.1.g_buffer.fs" />
     <None Include="Shaders\Chapter5\8.1.g_buffer.vs" />
+    <None Include="Shaders\Chapter7\text.fs" />
+    <None Include="Shaders\Chapter7\text.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png" />
+    <Image Include="Textures\brickwall.jpg" />
+    <Image Include="Textures\brickwall_normal.jpg" />
     <Image Include="Textures\container.jpg" />
     <Image Include="Textures\container2.png" />
     <Image Include="Textures\container2_specular.png" />
@@ -543,6 +549,7 @@
     <Image Include="Textures\matrix.jpg" />
     <Image Include="Textures\metal.png" />
     <Image Include="Textures\window.png" />
+    <Image Include="Textures\wood.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="External\GLFW\GLFW.vcxproj">
@@ -550,6 +557,9 @@
     </ProjectReference>
     <ProjectReference Include="External\Glad\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\freetype2\freetype.vcxproj">
+      <Project>{89895BD8-7556-B6E3-9E6F-A48B8A9BEB71}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

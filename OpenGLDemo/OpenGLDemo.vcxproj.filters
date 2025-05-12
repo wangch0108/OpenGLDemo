@@ -19,6 +19,9 @@
     <Filter Include="Core\Chapter5">
       <UniqueIdentifier>{59E200D0-C5A2-7C06-8EDD-C583FA5CC1E2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Chapter7">
+      <UniqueIdentifier>{5BE200D0-C7A2-7C06-90DD-C583FC5CC1E2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
@@ -64,6 +67,9 @@
     <Filter Include="Shaders\Chapter5">
       <UniqueIdentifier>{3A44B968-263D-D8BA-4F6F-BD3F3BC7B7C6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders\Chapter7">
+      <UniqueIdentifier>{3C44B968-283D-D8BA-516F-BD3F3DC7B7C6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Textures">
       <UniqueIdentifier>{A95C6780-9529-C28B-BE42-B033AA6EF719}</UniqueIdentifier>
     </Filter>
@@ -83,6 +89,9 @@
     </ClInclude>
     <ClInclude Include="Core\Chapter5\Chapter5.h">
       <Filter>Core\Chapter5</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Chapter7\Chapter7.h">
+      <Filter>Core\Chapter7</Filter>
     </ClInclude>
     <ClInclude Include="Core\Common\Camera.h">
       <Filter>Core\Common</Filter>
@@ -1019,6 +1028,24 @@
     <ClCompile Include="Core\Chapter5\Chapter5_1.BlinnPhong.cpp">
       <Filter>Core\Chapter5</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_3.NormalMapping.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter5\Chapter5_6.DeferredShading.cpp">
+      <Filter>Core\Chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Chapter7\Chapter7_1.TextRendering.cpp">
+      <Filter>Core\Chapter7</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Common\Shader.cpp">
       <Filter>Core\Common</Filter>
     </ClCompile>
@@ -1031,11 +1058,6 @@
     <ClCompile Include="External\stb_image\stb_image.cpp">
       <Filter>External\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Chapter5\Chapter5_2.ShadowMapping.cpp" />
-    <ClCompile Include="Core\Chapter5\Chapter5_3.NormalMapping.cpp" />
-    <ClCompile Include="Core\Chapter5\Chapter5_4.HDR.cpp" />
-    <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
-    <ClCompile Include="Core\Chapter5\Chapter5_6.DeferredShading.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Chapter1\3.3.shader.fs">
@@ -1260,90 +1282,102 @@
     <None Include="Shaders\Chapter4\9.3.normal_visualization.vs">
       <Filter>Shaders\Chapter4</Filter>
     </None>
-    <None Include="Shaders\Chapter5\1.advanced_lighting.vs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
     <None Include="Shaders\Chapter5\1.advanced_lighting.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.vs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.fs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.vs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.fs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\3.1.2.debug_quad.vs">
+    <None Include="Shaders\Chapter5\1.advanced_lighting.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\3.1.2.debug_quad.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\4.normal_mapping.vs">
+    <None Include="Shaders\Chapter5\3.1.2.debug_quad.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\3.1.2.shadow_mapping_depth.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\4.normal_mapping.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\6.hdr.vs">
+    <None Include="Shaders\Chapter5\4.normal_mapping.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\6.hdr.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\6.lighting.vs">
+    <None Include="Shaders\Chapter5\6.hdr.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\6.lighting.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\7.bloom.vs">
+    <None Include="Shaders\Chapter5\6.lighting.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\7.bloom.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\7.bloom_final.vs">
+    <None Include="Shaders\Chapter5\7.bloom.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\7.bloom_final.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
-    <None Include="Shaders\Chapter5\7.blur.vs">
+    <None Include="Shaders\Chapter5\7.bloom_final.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\7.blur.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
+    <None Include="Shaders\Chapter5\7.blur.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
     <None Include="Shaders\Chapter5\7.light_box.fs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\8.1.g_buffer.vs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\8.1.g_buffer.fs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\8.1.deferred_shading.vs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\8.1.deferred_shading.fs">
-      <Filter>Shaders\Chapter5</Filter>
-    </None>
-    <None Include="Shaders\Chapter5\8.1.deferred_light_box.vs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
     <None Include="Shaders\Chapter5\8.1.deferred_light_box.fs">
       <Filter>Shaders\Chapter5</Filter>
     </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_light_box.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_shading.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.deferred_shading.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.g_buffer.fs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter5\8.1.g_buffer.vs">
+      <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter7\text.fs">
+      <Filter>Shaders\Chapter7</Filter>
+    </None>
+    <None Include="Shaders\Chapter7\text.vs">
+      <Filter>Shaders\Chapter7</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\awesomeface.png">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\brickwall.jpg">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\brickwall_normal.jpg">
       <Filter>Textures</Filter>
     </Image>
     <Image Include="Textures\container.jpg">
@@ -1368,6 +1402,9 @@
       <Filter>Textures</Filter>
     </Image>
     <Image Include="Textures\window.png">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\wood.png">
       <Filter>Textures</Filter>
     </Image>
   </ItemGroup>

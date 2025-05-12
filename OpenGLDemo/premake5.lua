@@ -26,6 +26,7 @@ ASSIMP_BIN = "%{wks.location}/OpenGLDemo/External/Assimp/bin/x64/"
 group "Dependencies"
 	include "OpenGLDemo/External/Glad"
 	include "OpenGLDemo/External/GLFW"
+	include "OpenGLDemo/External/freetype2"
 group ""
 
 set_work_directory("OpenGLDemo")
@@ -66,6 +67,7 @@ project "OpenGLDemo"
 		"External/stb_image",
 		"External/glm",
 		"External/Assimp/include",
+		"External/freetype2/include",
 		"",
 	}
 
@@ -78,7 +80,8 @@ project "OpenGLDemo"
 	{
 		"GLFW",
 		"Glad",
-		"assimp-vc143-mt"
+		"assimp-vc143-mt",
+		"freetype",
 	}
 
 	filter "configurations:Debug"
