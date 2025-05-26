@@ -45,6 +45,8 @@ int main()
 	// return Chapter5::Chapter5BloomMain();
 	// return Chapter5::Chapter5DeferredShadingMain();
 
-	Shader::pathPrefix = "Shaders/Chapter7/";
-	return Chapter7::Chapter7TextRenderingMain();
+	Shader::pathPrefix = "Shaders/Chapter7/";
+
+	// return Chapter7::Chapter7TextRenderingMain();
+	return Chapter7::Chapter7SkeletalAnimationMain();
 }

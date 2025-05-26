@@ -25,6 +25,9 @@
     <Filter Include="Core\Common">
       <UniqueIdentifier>{A681F66E-1237-6F64-9B2B-693B07E06568}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Common\Anim">
+      <UniqueIdentifier>{9A7FDFA8-8678-FEFA-AFAA-E37F9B02DE06}</UniqueIdentifier>
+    </Filter>
     <Filter Include="External">
       <UniqueIdentifier>{089DB854-F469-1360-1D83-010809AF48EE}</UniqueIdentifier>
     </Filter>
@@ -92,6 +95,24 @@
     </ClInclude>
     <ClInclude Include="Core\Chapter7\Chapter7.h">
       <Filter>Core\Chapter7</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\AnimData.h">
+      <Filter>Core\Common\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\Animation.h">
+      <Filter>Core\Common\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\Animator.h">
+      <Filter>Core\Common\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\AssimpGLMHelpers.h">
+      <Filter>Core\Common\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\Bone.h">
+      <Filter>Core\Common\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common\Anim\ModelAnimation.h">
+      <Filter>Core\Common\Anim</Filter>
     </ClInclude>
     <ClInclude Include="Core\Common\Camera.h">
       <Filter>Core\Common</Filter>
@@ -1046,6 +1067,9 @@
     <ClCompile Include="Core\Chapter7\Chapter7_1.TextRendering.cpp">
       <Filter>Core\Chapter7</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Chapter7\Chapter7_2.SkeletalAnimation.cpp">
+      <Filter>Core\Chapter7</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Common\Shader.cpp">
       <Filter>Core\Common</Filter>
     </ClCompile>
@@ -1362,6 +1386,12 @@
     </None>
     <None Include="Shaders\Chapter5\8.1.g_buffer.vs">
       <Filter>Shaders\Chapter5</Filter>
+    </None>
+    <None Include="Shaders\Chapter7\anim_model.fs">
+      <Filter>Shaders\Chapter7</Filter>
+    </None>
+    <None Include="Shaders\Chapter7\anim_model.vs">
+      <Filter>Shaders\Chapter7</Filter>
     </None>
     <None Include="Shaders\Chapter7\text.fs">
       <Filter>Shaders\Chapter7</Filter>

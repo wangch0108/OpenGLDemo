@@ -108,6 +108,12 @@
     <ClInclude Include="Core\Chapter4\Chapter4.h" />
     <ClInclude Include="Core\Chapter5\Chapter5.h" />
     <ClInclude Include="Core\Chapter7\Chapter7.h" />
+    <ClInclude Include="Core\Common\Anim\AnimData.h" />
+    <ClInclude Include="Core\Common\Anim\Animation.h" />
+    <ClInclude Include="Core\Common\Anim\Animator.h" />
+    <ClInclude Include="Core\Common\Anim\AssimpGLMHelpers.h" />
+    <ClInclude Include="Core\Common\Anim\Bone.h" />
+    <ClInclude Include="Core\Common\Anim\ModelAnimation.h" />
     <ClInclude Include="Core\Common\Camera.h" />
     <ClInclude Include="Core\Common\Mesh.h" />
     <ClInclude Include="Core\Common\Model.h" />
@@ -427,6 +433,7 @@
     <ClCompile Include="Core\Chapter5\Chapter5_5.Bloom.cpp" />
     <ClCompile Include="Core\Chapter5\Chapter5_6.DeferredShading.cpp" />
     <ClCompile Include="Core\Chapter7\Chapter7_1.TextRendering.cpp" />
+    <ClCompile Include="Core\Chapter7\Chapter7_2.SkeletalAnimation.cpp" />
     <ClCompile Include="Core\Common\Shader.cpp" />
     <ClCompile Include="Core\Common\Utility.cpp" />
     <ClCompile Include="Core\main.cpp" />
@@ -534,6 +541,8 @@
     <None Include="Shaders\Chapter5\8.1.deferred_shading.vs" />
     <None Include="Shaders\Chapter5\8.1.g_buffer.fs" />
     <None Include="Shaders\Chapter5\8.1.g_buffer.vs" />
+    <None Include="Shaders\Chapter7\anim_model.fs" />
+    <None Include="Shaders\Chapter7\anim_model.vs" />
     <None Include="Shaders\Chapter7\text.fs" />
     <None Include="Shaders\Chapter7\text.vs" />
   </ItemGroup>

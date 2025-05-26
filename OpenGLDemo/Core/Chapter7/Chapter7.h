@@ -9,4 +9,5 @@ namespace Chapter7
 	const unsigned int SCR_HEIGHT = 600;
 
 	int Chapter7TextRenderingMain();
+	int Chapter7SkeletalAnimationMain();
 }

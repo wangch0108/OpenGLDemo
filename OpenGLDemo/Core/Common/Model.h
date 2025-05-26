@@ -3,6 +3,7 @@
 
 #include "Core/Common/Shader.h"
 #include "Core/Common/Mesh.h"
+#include "Core/Common/Anim/AnimData.h"
 
 #include <glad/glad.h> 
 #include <glm/glm.hpp>
@@ -43,6 +44,7 @@ public:
     }
 
 private:
+
     // loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.
     void loadModel(string const& path)
     {
